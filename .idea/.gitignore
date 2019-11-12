@@ -2,5 +2,6 @@
 
 .env
 puppies/migrations/*
+puppies/__pycache__/*
 puppy_store/__pycache__/*
 
