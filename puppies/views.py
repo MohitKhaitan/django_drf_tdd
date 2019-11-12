@@ -6,7 +6,7 @@ from .models import Puppy
 from .serializers import PuppySerializer
 
 
-class Puppy(APIView):
+class SinglePuppy(APIView):
     """
     Base class for GET, DELETE, UPDATE a single puppy
     """
@@ -52,7 +52,9 @@ class Puppies(APIView):
         :param request: Http request
         :return: List of puppies
         """
-        return Response({})
+        puppies = Puppy.objects.all()
+        serializer = PuppySerializer(puppies, many=True)
+        return Response(serializer.data)
 
     @staticmethod
     def post(request: Request) -> Response:
