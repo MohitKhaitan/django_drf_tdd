@@ -17,4 +17,5 @@ class PuppyTest(TestCase):
 
         self.assert_(puppy_casper.get_breed(), 'Casper belongs to Bull Dog breed.')
         self.assert_(puppy_muffin.get_breed(), 'Muffin belongs to Gradane breed')
-        
+
+

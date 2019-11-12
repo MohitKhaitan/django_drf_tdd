@@ -33,8 +33,8 @@ ALLOWED_HOSTS = []
 REST_FRAMEWORK = {
     # Use django standard 'django.contrib.auth' permissions,
     # or allow read-only access for unauthenticated users.
-    'DEFAULT_PERMISSION_CLASS': [],
-    'TEST_REQUEST_DEFAULT_FORMAT': 'json'
+    #'DEFAULT_PERMISSION_CLASS': [],
+    #'TEST_REQUEST_DEFAULT_FORMAT': 'json'
 }
 
 INSTALLED_APPS = [
